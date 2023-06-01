@@ -173,19 +173,20 @@ footer {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02;
+  position: relative;
 }
 .current-link {
   color: var(--hover-color);
 }
 .current-link::after {
   color: var(--hover-color);
+  content: "";
   position: absolute;
-  display: inline-block;
-  left: 0;
+  display: block;
   bottom: -32px;
   background-color: var(--hover-color);
-  content: "";
-  width: 100%;
+
+  width: 58px;
   height: 4px;
   border-radius: 2px;
 }
