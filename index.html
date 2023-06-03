@@ -68,7 +68,9 @@
         <h1 class="order-service-title">
           EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
         </h1>
-        <button class="order-service-button" type="button">Zamów usługę</button>
+        <button class="order-service-button" type="button" data-modal-open>
+          Zamów usługę
+        </button>
         <!-- </div> -->
       </section>
 
@@ -139,6 +141,7 @@
                 width="370"
                 height="294"
               />
+              <p class="label">Aplikacje komputerowe</p>
             </li>
             <li class="work-list-image">
               <img
@@ -148,6 +151,7 @@
                 width="370"
                 height="294"
               />
+              <p class="label">Aplikacje mobilne</p>
             </li>
             <li class="work-list-image">
               <img
@@ -156,6 +160,7 @@
                 width="370"
                 height="294"
               />
+              <p class="label">Rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
@@ -456,6 +461,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="button-close" data-modal-close="">
+          <svg width="11" height="11">
+            <use href="./images/icon-close.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
